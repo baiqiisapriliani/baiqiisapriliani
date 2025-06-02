@@ -1,0 +1,462 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   BankDash Credit Cards
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="js/chart.js"></script>
+   <script src="js/loadPartials.js"></script>
+     <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-KIT.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-[#F4F7FF] text-[#2E2E5C] min-h-screen flex">
+  <!-- Sidebar and Header wrapper -->
+    <div id="sidebar-container"></div>
+   <main class="flex-1 flex flex-col overflow-hidden">
+     <div id="header-container"></div>
+    <!-- Content -->
+    <section class="p-8 overflow-auto space-y-6">
+     <!-- My Cards -->
+     <section>
+      <h2 class="font-semibold text-[#2E2E5C] mb-4 select-none">
+       My Cards
+      </h2>
+      <div  class="flex gap-6 overflow-x-auto">
+       <!-- Card 1 -->
+       <div class="flex-shrink-0 w-[280px] md:w-full lg:w-full lg:max-w-[300px] bg-gradient-to-br from-[#4F7CFB] to-[#7A9BFB] rounded-2xl p-6 text-white flex flex-col justify-between">
+        <div class="flex justify-between items-start">
+         <div >
+          <p class="text-xs opacity-80">
+           Balance
+          </p>
+          <p class="font-semibold text-lg mt-1">
+           $5,756
+          </p>
+         </div>
+         <img alt="Credit card chip icon in white" class="w-8 h-8 opacity-90" height="32" src="img/foto2.png" width="32"/>
+        </div>
+        <div class="flex justify-between mt-6 text-xs opacity-80">
+         <div>
+          <p>
+           Card Holder
+          </p>
+          <p class="font-semibold mt-1">
+           Eddy Cusuma
+          </p>
+         </div>
+         <div class="text-right">
+          <p>
+           Valid Thru
+          </p>
+          <p class="font-semibold mt-1">
+           12/22
+          </p>
+         </div>
+        </div>
+        <div class="flex justify-between items-center mt-6 text-lg font-semibold">
+         <p>
+          3778 **** **** 1234
+         </p>
+         <label class="relative inline-flex items-center cursor-pointer" for="toggle1">
+          <input checked="" class="sr-only peer" id="toggle1" type="checkbox"/>
+          <div class="w-11 h-6 bg-[#A3B1FF] rounded-full peer peer-checked:bg-[#4F7CFB] peer-focus:ring-2 peer-focus:ring-blue-300 transition-colors">
+          </div>
+          <div class="absolute left-1 top-1 bg-white w-4 h-4 rounded-full transition-transform peer-checked:translate-x-5">
+          </div>
+         </label>
+        </div>
+       </div>
+       <!-- Card 2 -->
+        <div class="flex-shrink-0 w-[300px] md:w-full lg:w-full lg:max-w-[300px] bg-gradient-to-br from-[#0000B8] to-[#4F4FFF] rounded-2xl p-6 text-white flex flex-col justify-between">
+        <div class="flex justify-between items-start">
+         <div>
+          <p class="text-xs opacity-80">
+           Balance
+          </p>
+          <p class="font-semibold text-lg mt-1">
+           $5,756
+          </p>
+         </div>
+         <img alt="Credit card chip icon in white" class="w-8 h-8 opacity-90" height="32" src="img/foto2.png" width="32"/>
+        </div>
+        <div class="flex justify-between mt-6 text-xs opacity-80">
+         <div>
+          <p>
+           Card Holder
+          </p>
+          <p class="font-semibold mt-1">
+           Eddy Cusuma
+          </p>
+         </div>
+         <div class="text-right">
+          <p>
+           Valid Thru
+          </p>
+          <p class="font-semibold mt-1">
+           12/22
+          </p>
+         </div>
+        </div>
+        <div class="flex justify-between items-center mt-6 text-lg font-semibold">
+         <p>
+          3778 **** **** 1234
+         </p>
+         <label class="relative inline-flex items-center cursor-pointer" for="toggle2">
+          <input checked="" class="sr-only peer" id="toggle2" type="checkbox"/>
+          <div class="w-11 h-6 bg-[#A3B1FF] rounded-full peer peer-checked:bg-[#4F7CFB] peer-focus:ring-2 peer-focus:ring-blue-300 transition-colors">
+          </div>
+          <div class="absolute left-1 top-1 bg-white w-4 h-4 rounded-full transition-transform peer-checked:translate-x-5">
+          </div>
+         </label>
+        </div>
+       </div>
+       <!-- Card 3 -->
+             <div class="flex-shrink-0 w-[280px] md:w-full lg:w-full lg:max-w-[300px] bg-white rounded-2xl p-6 text-[#2E2E5C] flex flex-col justify-between">
+        <div class="flex justify-between items-start">
+         <div>
+          <p class="text-xs text-[#9CA3AF]">
+           Balance
+          </p>
+          <p class="font-semibold text-lg mt-1">
+           $5,756
+          </p>
+         </div>
+         <img alt="Credit card chip icon in white" class="w-8 h-8 opacity-90" height="32" src="img/icon.png" width="32"  />
+        </div>
+        <div class="flex justify-between mt-6 text-xs text-[#9CA3AF]">
+         <div>
+          <p>
+           Card Holder
+          </p>
+          <p class="font-semibold mt-1 text-[#2E2E5C]">
+           Eddy Cusuma
+          </p>
+         </div>
+         <div class="text-right">
+          <p>
+           Valid Thru
+          </p>
+          <p class="font-semibold mt-1 text-[#2E2E5C]">
+           12/22
+          </p>
+         </div>
+        </div>
+        <div class="flex justify-between items-center mt-6 text-lg font-semibold text-[#2E2E5C]">
+         <p>
+          3778 **** **** 1234
+         </p>
+         <label class="relative inline-flex items-center cursor-pointer" for="toggle3">
+          <input class="sr-only peer" id="toggle3" type="checkbox"/>
+          <div class="w-11 h-6 bg-[#D1D5DB] rounded-full peer peer-checked:bg-[#4F7CFB] peer-focus:ring-2 peer-focus:ring-blue-300 transition-colors">
+          </div>
+          <div class="absolute left-1 top-1 bg-white w-4 h-4 rounded-full transition-transform peer-checked:translate-x-5">
+          </div>
+         </label>
+        </div>
+       </div>
+      </div>
+     </section>
+     <!-- Card Expense Statistics and Card List -->
+       
+  <section class="flex flex-col lg:flex-row gap-6">
+  <!-- Card Expense Statistics -->
+  <div class="max-w-xs w-full">
+    <h3 class="text-lg font-semibold text-[#2E2E5C] mb-4">Card Expense Statistics</h3>
+    <div class="bg-white rounded-2xl p-4 flex flex-col items-center">
+      <canvas id="donutChart" class="w-40 h-40"></canvas>
+      <ul class="mt-6 grid grid-cols-2 gap-2 text-xs">
+        <li class="flex items-center gap-2 text-[#4F7CFB]">
+          <span class="w-3 h-3 rounded-full bg-[#4F7CFB]"></span> DBL Bank
+        </li>
+        <li class="flex items-center gap-2 text-[#F87171]">
+          <span class="w-3 h-3 rounded-full bg-[#F87171]"></span> BRC Bank
+        </li>
+        <li class="flex items-center gap-2 text-[#4FD1C5]">
+          <span class="w-3 h-3 rounded-full bg-[#4FD1C5]"></span> ABM Bank
+        </li>
+        <li class="flex items-center gap-2 text-[#FBBF24]">
+          <span class="w-3 h-3 rounded-full bg-[#FBBF24]"></span> MCP Bank
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Card List -->
+  <div class="flex-1">
+    <h3 class="font-semibold text-[#2E2E5C] mb-2 select-none">Card List</h3>
+    <div class="space-y-4">
+      <!-- Card Item 1 -->
+      <div class="bg-white rounded-2xl p-4 flex items-center gap-4 text-sm text-[#2E2E5C]">
+        <div class="flex items-center justify-center w-12 h-12 rounded-lg bg-[#E0E7FF] text-[#4F7CFB] flex-shrink-0">
+          <i class="fas fa-credit-card text-lg"></i>
+        </div>
+        <div class="flex-1 grid grid-cols-3 md:grid-cols-5 gap-4">
+          <div>
+            <p class="font-semibold text-xs select-text">Card Type</p>
+            <p class="text-[#9CA3AF] text-xs select-text">Secondary</p>
+          </div>
+          <div>
+            <p class="font-semibold text-xs select-text">Bank</p>
+            <p class="text-[#4F7CFB] text-xs select-text">DBL Bank</p>
+          </div>
+          <div class="hidden md:block">
+            <p class="font-semibold text-xs select-text">Card Number</p>
+            <p class="text-[#9CA3AF] text-xs select-text">**** **** 5600</p>
+          </div>
+          <div class="hidden md:block">
+            <p class="font-semibold text-xs select-text">Namain Card</p>
+            <p class="text-[#9CA3AF] text-xs select-text">William</p>
+          </div>
+          <div class="text-xs text-[#4F7CFB] font-semibold cursor-pointer select-none text-right">
+            View Details
+          </div>
+        </div>
+      </div>
+       <div class="bg-white rounded-2xl p-4 flex items-center gap-4 text-sm text-[#2E2E5C]">
+        <div class="flex items-center justify-center w-12 h-12 rounded-lg bg-[#FEE2E2] text-[#F87171] flex-shrink-0">
+         <i class="fas fa-credit-card text-lg">
+         </i>
+        </div>
+        <div class="flex-1 grid grid-cols-3 md:grid-cols-5 gap-4">
+         <div>
+          <p class="font-semibold text-xs select-text">
+           Card Type
+          </p>
+          <p class="text-[#9CA3AF] text-xs select-text">
+           Secondary
+          </p>
+         </div>
+         <div>
+          <p class="font-semibold text-xs select-text">
+           Bank
+          </p>
+          <p class="text-[#4F7CFB] text-xs select-text">
+           BRC Bank
+          </p>
+         </div>
+         <div class="hidden md:block">
+          <p class="font-semibold text-xs select-text">
+           Card Number
+          </p>
+          <p class="text-[#9CA3AF] text-xs select-text">
+           **** **** 4300
+          </p>
+         </div>
+         <div class="hidden md:block">
+          <p class="font-semibold text-xs select-text">
+           Namain Card
+          </p>
+          <p class="text-[#9CA3AF] text-xs select-text">
+           Michel
+          </p>
+         </div>
+         <div class="text-xs text-[#4F7CFB] font-semibold cursor-pointer select-none text-right">
+          View Details
+         </div>
+        </div>
+       </div>
+
+       <div class="bg-white rounded-2xl p-4 flex items-center gap-4 text-sm text-[#2E2E5C]">
+        <div class="flex items-center justify-center w-12 h-12 rounded-lg bg-[#FEF3C7] text-[#FBBF24] flex-shrink-0">
+         <i class="fas fa-credit-card text-lg">
+         </i>
+        </div>
+        <div class="flex-1 grid grid-cols-3 md:grid-cols-5 gap-4">
+         <div>
+          <p class="font-semibold text-xs select-text">
+           Card Type
+          </p>
+          <p class="text-[#9CA3AF] text-xs select-text">
+           Secondary
+          </p>
+         </div>
+         <div>
+          <p class="font-semibold text-xs select-text">
+           Bank
+          </p>
+          <p class="text-[#4F7CFB] text-xs select-text">
+           ABM Bank
+          </p>
+         </div>
+         <div class="hidden md:block">
+          <p class="font-semibold text-xs select-text">
+           Card Number
+          </p>
+          <p class="text-[#9CA3AF] text-xs select-text">
+           **** **** 7560
+          </p>
+         </div>
+         <div class="hidden md:block">
+          <p class="font-semibold text-xs select-text">
+           Namain Card
+          </p>
+          <p class="text-[#9CA3AF] text-xs select-text">
+           Edward
+          </p>
+         </div>
+         <div class="text-xs text-[#4F7CFB] font-semibold cursor-pointer select-none text-right">
+          View Details
+         </div>
+        </div>
+       </div>
+        <div class="bg-white rounded-2xl p-4 flex items-center gap-4 text-sm text-[#2E2E5C]">
+        <div class="flex items-center justify-center w-12 h-12 rounded-lg bg-[#E0E7FF] text-[#4F7CFB] flex-shrink-0">
+          <i class="fas fa-credit-card text-lg"></i>
+        </div>
+        <div class="flex-1 grid grid-cols-3 md:grid-cols-5 gap-4">
+          <div>
+            <p class="font-semibold text-xs select-text">Card Type</p>
+            <p class="text-[#9CA3AF] text-xs select-text">Secondary</p>
+          </div>
+          <div>
+            <p class="font-semibold text-xs select-text">Bank</p>
+            <p class="text-[#4F7CFB] text-xs select-text">DBL Bank</p>
+          </div>
+          <div class="hidden md:block">
+            <p class="font-semibold text-xs select-text">Card Number</p>
+            <p class="text-[#9CA3AF] text-xs select-text">**** **** 5600</p>
+          </div>
+          <div class="hidden md:block">
+            <p class="font-semibold text-xs select-text">Namain Card</p>
+            <p class="text-[#9CA3AF] text-xs select-text">William</p>
+          </div>
+          <div class="text-xs text-[#4F7CFB] font-semibold cursor-pointer select-none text-right">
+            View Details
+          </div>
+        </div>
+      </div>
+      <!-- Repeat other cards below -->
+    </div>
+  </div>
+</section>
+
+
+     <!-- Add New Card and Card Setting -->
+   <section class="flex flex-col lg:flex-row gap-6">
+  <!-- KIRI: Add New Card -->
+  <div class="flex-1">
+    <h3 class="font-semibold text-[#2E2E5C] text-2xl select-none mb-4">
+      Add New Card
+    </h3>
+    <div class="space-y-6 bg-white rounded-2xl p-8">
+      <p class="text-sm text-[#4F7CFB] leading-relaxed select-text">
+        Credit Card generally means a plastic card issued by Scheduled Commercial
+        Banks assigned to a Cardholder, with a credit limit, that can be used to
+        purchase goods and services on credit or obtain cash advances.
+      </p>
+      <form class="grid grid-cols-1 sm:grid-cols-2 gap-6" onsubmit="event.preventDefault()">
+        <!-- form inputs -->
+        <div class="flex flex-col gap-1">
+          <label class="text-sm text-[#2E2E5C] font-semibold select-none" for="cardType">
+            Card Type
+          </label>
+          <input class="w-full rounded-lg border border-[#E6E9F0] bg-white py-3 px-4 text-sm text-[#4F7CFB] focus:outline-none focus:ring-2 focus:ring-blue-600" id="cardType" name="cardType" type="text" value="Classic" />
+        </div>
+        <div class="flex flex-col gap-1">
+          <label class="text-sm text-[#2E2E5C] font-semibold select-none" for="nameOnCard">
+            Name On Card
+          </label>
+          <input class="w-full rounded-lg border border-[#E6E9F0] bg-white py-3 px-4 text-sm text-[#4F7CFB] focus:outline-none focus:ring-2 focus:ring-blue-600" id="nameOnCard" name="nameOnCard" type="text" value="My Cards" />
+        </div>
+        <div class="flex flex-col gap-1">
+          <label class="text-sm text-[#2E2E5C] font-semibold select-none" for="cardNumber">
+            Card Number
+          </label>
+          <input class="w-full rounded-lg border border-[#E6E9F0] bg-white py-3 px-4 text-sm text-[#4F7CFB] placeholder-[#4F7CFB] focus:outline-none focus:ring-2 focus:ring-blue-600" id="cardNumber" name="cardNumber" placeholder="**** **** **** ****" type="text" />
+        </div>
+        <div class="flex flex-col gap-1">
+          <label class="text-sm text-[#2E2E5C] font-semibold select-none" for="expirationDate">
+            Expiration Date
+          </label>
+          <input class="w-full rounded-lg border border-[#E6E9F0] bg-white py-3 px-4 text-sm text-[#4F7CFB] focus:outline-none focus:ring-2 focus:ring-blue-600" id="expirationDate" name="expirationDate" type="text" value="25 January 2025" />
+        </div>
+          <div class="col-span-full flex justify-center md:justify-end mt-4">
+            <button type="submit"
+              class="bg-[#0B22E6] text-white rounded-xl px-8 py-3 text-sm font-normal w-full md:w-auto">
+              Save
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- KANAN: Card Setting -->
+  <div class="w-full lg:w-[300px]">
+    <h3 class="font-semibold text-[#2E2E5C] text-2xl select-none mb-4">
+      Card Setting
+    </h3>
+    <div class="space-y-4 bg-white rounded-2xl p-6">
+      <ul class="space-y-3">
+        <!-- Block Card -->
+        <li class="flex items-center gap-3 bg-[#FEF3C7] rounded-xl p-3">
+          <div class="w-10 h-10 rounded-lg bg-[#FBBF24] flex items-center justify-center text-white flex-shrink-0">
+            <i class="fas fa-credit-card"></i>
+          </div>
+          <div class="text-xs select-none">
+            <p class="font-semibold text-[#2E2E5C]">Block Card</p>
+            <p class="text-[#9CA3AF]">Instantly block your card</p>
+          </div>
+        </li>
+        <!-- Change Pic Code -->
+        <li class="flex items-center gap-3 bg-[#E0E7FF] rounded-xl p-3">
+          <div class="w-10 h-10 rounded-lg bg-[#4F7CFB] flex items-center justify-center text-white flex-shrink-0">
+            <i class="fas fa-lock"></i>
+          </div>
+          <div class="text-xs select-none">
+            <p class="font-semibold text-[#2E2E5C]">Change Pic Code</p>
+            <p class="text-[#9CA3AF]">Withdraw without any card</p>
+          </div>
+        </li>
+        <!-- Add to Google Pay -->
+        <li class="flex items-center gap-3 bg-[#FEE2E2] rounded-xl p-3">
+          <div class="w-10 h-10 rounded-lg bg-[#F87171] flex items-center justify-center text-white flex-shrink-0">
+            <span class="font-bold text-lg">G</span>
+          </div>
+          <div class="text-xs select-none">
+            <p class="font-semibold text-[#2E2E5C]">Add to Google Pay</p>
+            <p class="text-[#9CA3AF]">Withdraw without any card</p>
+          </div>
+        </li>
+        <!-- Add to Apple Pay -->
+        <li class="flex items-center gap-3 bg-[#D1FAE5] rounded-xl p-3">
+          <div class="w-10 h-10 rounded-lg bg-[#4FD1C5] flex items-center justify-center text-white flex-shrink-0">
+            <i class="fab fa-apple"></i>
+          </div>
+          <div class="text-xs select-none">
+            <p class="font-semibold text-[#2E2E5C]">Add to Apple Pay</p>
+            <p class="text-[#9CA3AF]">Withdraw without any card</p>
+          </div>
+        </li>
+        <!-- Add to Apple Store -->
+        <li class="flex items-center gap-3 bg-[#D1FAE5] rounded-xl p-3">
+          <div class="w-10 h-10 rounded-lg bg-[#4FD1C5] flex items-center justify-center text-white flex-shrink-0">
+            <i class="fab fa-apple"></i>
+          </div>
+          <div class="text-xs select-none">
+            <p class="font-semibold text-[#2E2E5C]">Add to Apple Store</p>
+            <p class="text-[#9CA3AF]">Withdraw without any card</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    </section>
+   </main>
+  </div>
+ </body>
+
+</html>
