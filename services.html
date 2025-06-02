@@ -1,0 +1,357 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BankDash Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+   <script src="js/loadPartials.js"></script>
+     <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-KIT.js" crossorigin="anonymous"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-[#f5f8ff] min-h-screen flex overflow-hidden">
+    <div id="sidebar-container"></div>
+   <main class="flex-1 flex flex-col overflow-hidden">
+     <div id="header-container"></div>
+
+    <!-- Scrollable content -->
+    <section class="flex-1 overflow-y-auto px-8 py-8 bg-[#f9fbff]">
+      <!-- Services cards -->
+      <div class="overflow-x-auto">
+  <div class="flex gap-6 flex-nowrap justify-start mb-8">
+   <div class="flex-shrink-0 flex items-center gap-4 bg-white rounded-2xl px-10 py-8 max-w-sm min-w-[320px]">
+  <div class="flex items-center justify-center w-16 h-16 rounded-full bg-blue-200 text-blue-700">
+        <i class="fas fa-shield-alt text-xl"></i>
+      </div>
+      <div>
+        <h3 class="font-semibold text-base text-[#1e293b]">Life Insurance</h3>
+        <p class="text-sm text-blue-600">Unlimited protection</p>
+      </div>
+    </div>
+    <div class="flex-shrink-0 flex items-center gap-4 bg-white rounded-2xl px-10 py-8 max-w-sm min-w-[320px]">
+  <div class="flex items-center justify-center w-16 h-16 rounded-full bg-yellow-100 text-yellow-700">
+        <i class="fas fa-shopping-bag text-xl"></i>
+      </div>
+      <div>
+        <h3 class="font-semibold text-base text-[#1e293b]">Shopping</h3>
+        <p class="text-sm text-blue-600">Buy. Think. Grow.</p>
+      </div>
+    </div>
+     <div class="flex-shrink-0 flex items-center gap-4 bg-white rounded-2xl px-10 py-8 max-w-sm min-w-[320px]">
+  <div class="flex items-center justify-center w-16 h-16 rounded-full bg-teal-100 text-teal-700">
+        <i class="fas fa-shield-alt text-xl"></i>
+      </div>
+      <div>
+        <h3 class="font-semibold text-base text-[#1e293b]">Safety</h3>
+        <p class="text-sm text-blue-600">We are your allies</p>
+      </div>
+    </div>
+  </div>
+</div>
+      <!-- Bank Services List -->
+     <div class="flex-1 space-y-4">
+       <h3 class="font-semibold text-[#2E2E5C] mb-2 select-none">
+        Card List
+       </h3>
+   <div class="bg-white rounded-2xl p-4 flex items-center gap-4 text-sm text-[#2E2E5C]">
+        <div  class="flex items-center justify-center w-12 h-12 rounded-xl bg-pink-100 text-pink-600 flex-shrink-0">
+         <i class="fas fa-hand-holding-usd text-lg">
+         </i>
+        </div>
+        <div class="flex-1 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2">
+         <div>
+          <p class="font-semibold text-xs select-text">
+           Business loans
+          </p>
+          <p class="text-[#4F7CFB] text-xs select-text">
+           It is a long established
+          </p>
+         </div>
+         <div class="hidden md:block">
+          <p class="font-semibold text-xs select-text">
+           Lorem Ipsum
+          </p>
+          <p class="text-[#4F7CFB] text-xs select-text">
+           Many publishing
+          </p>
+         </div>
+         <div class="hidden md:block">
+            <p class="font-semibold text-xs select-text">
+           Lorem Ipsum
+          </p>
+          <p class="text-[#4F7CFB] text-xs select-text">
+           Many publishing
+          </p>
+         </div>
+         <div class="hidden md:block">
+           <p class="font-semibold text-xs select-text">
+           Lorem Ipsum
+          </p>
+          <p class="text-[#4F7CFB] text-xs select-text">
+           Many publishing
+          </p>
+         </div>
+         <div>
+           <button
+            class="ml-auto text-blue-600 border border-blue-300 rounded-full px-4 py-1 text-xs hover:bg-blue-50 transition">
+            View Details
+          </button>
+         </div>
+        </div>
+       </div>
+ <!-- Item 2 -->
+        <div class="bg-white rounded-2xl p-4 flex items-center gap-4 text-sm text-[#2E2E5C]">
+        <div class="flex items-center justify-center w-12 h-12 rounded-xl bg-yellow-100 text-yellow-600 flex-shrink-0"
+          >
+            <i class="fas fa-briefcase text-lg"></i>
+        </div>
+        <div class="flex-1 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2">
+         <div>
+          <p class="font-semibold text-xs select-text">
+           Checking accounts
+          </p>
+          <p class="text-[#4F7CFB] text-xs select-text">
+           It is a long established
+          </p>
+         </div>
+         <div class="hidden md:block">
+          <p class="font-semibold text-xs select-text">
+           Lorem Ipsum
+          </p>
+          <p class="text-[#4F7CFB] text-xs select-text">
+           Many publishing
+          </p>
+         </div>
+         <div class="hidden md:block">
+            <p class="font-semibold text-xs select-text">
+           Lorem Ipsum
+          </p>
+          <p class="text-[#4F7CFB] text-xs select-text">
+           Many publishing
+          </p>
+         </div>
+         <div class="hidden md:block">
+           <p class="font-semibold text-xs select-text">
+           Lorem Ipsum
+          </p>
+          <p class="text-[#4F7CFB] text-xs select-text">
+           Many publishing
+          </p>
+         </div>
+         <div>
+           <button
+            class="ml-auto text-blue-600 border border-blue-300 rounded-full px-4 py-1 text-xs hover:bg-blue-50 transition">
+            View Details
+          </button>
+         </div>
+        </div>
+       </div>
+ <!-- Item 3 -->
+        <div class="bg-white rounded-2xl p-4 flex items-center gap-4 text-sm text-[#2E2E5C]">
+        <div class="flex items-center justify-center w-12 h-12 rounded-xl bg-pink-200 text-pink-600 flex-shrink-0"
+          >
+            <i class="fas fa-chart-bar text-lg">
+         </i>
+        </div>
+        <div class="flex-1 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2">
+         <div>
+          <p class="font-semibold text-xs select-text">
+           Savings accounts
+          </p>
+          <p class="text-[#4F7CFB] text-xs select-text">
+           It is a long established
+          </p>
+         </div>
+         <div class="hidden md:block">
+          <p class="font-semibold text-xs select-text">
+           Lorem Ipsum
+          </p>
+          <p class="text-[#4F7CFB] text-xs select-text">
+           Many publishing
+          </p>
+         </div>
+         <div class="hidden md:block">
+            <p class="font-semibold text-xs select-text">
+           Lorem Ipsum
+          </p>
+          <p class="text-[#4F7CFB] text-xs select-text">
+           Many publishing
+          </p>
+         </div>
+         <div class="hidden md:block">
+           <p class="font-semibold text-xs select-text">
+           Lorem Ipsum
+          </p>
+          <p class="text-[#4F7CFB] text-xs select-text">
+           Many publishing
+          </p>
+         </div>
+         <div>
+           <button
+            class="ml-auto text-blue-600 border border-blue-300 rounded-full px-4 py-1 text-xs hover:bg-blue-50 transition">
+            View Details
+          </button>
+         </div>
+        </div>
+       </div>
+  <!-- Item 4 -->
+          <div class="bg-white rounded-2xl p-4 flex items-center gap-4 text-sm text-[#2E2E5C]">
+        <div class="flex items-center justify-center w-12 h-12 rounded-xl bg-blue-200 text-blue-700 flex-shrink-0"
+          >
+            <i class="fas fa-user text-lg">
+         </i>
+        </div>
+        <div class="flex-1 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2">
+         <div>
+          <p class="font-semibold text-xs select-text">
+           Debit and credit cards
+          </p>
+          <p class="text-[#4F7CFB] text-xs select-text">
+           It is a long established
+          </p>
+         </div>
+         <div class="hidden md:block">
+          <p class="font-semibold text-xs select-text">
+           Lorem Ipsum
+          </p>
+          <p class="text-[#4F7CFB] text-xs select-text">
+           Many publishing
+          </p>
+         </div>
+         <div class="hidden md:block">
+            <p class="font-semibold text-xs select-text">
+           Lorem Ipsum
+          </p>
+          <p class="text-[#4F7CFB] text-xs select-text">
+           Many publishing
+          </p>
+         </div>
+         <div class="hidden md:block">
+           <p class="font-semibold text-xs select-text">
+           Lorem Ipsum
+          </p>
+          <p class="text-[#4F7CFB] text-xs select-text">
+           Many publishing
+          </p>
+         </div>
+         <div>
+           <button
+            class="ml-auto text-blue-600 border border-blue-300 rounded-full px-4 py-1 text-xs hover:bg-blue-50 transition">
+            View Details
+          </button>
+         </div>
+        </div>
+       </div>
+<!-- Item 5 -->
+        <div class="bg-white rounded-2xl p-4 flex items-center gap-4 text-sm text-[#2E2E5C]">
+        <div  class="flex items-center justify-center w-12 h-12 rounded-xl bg-teal-100 text-teal-600 flex-shrink-0"
+          >
+            <i class="fas fa-shield-alt text-lg"></i>
+         </i>
+        </div>
+        <div class="flex-1 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2">
+         <div>
+          <p class="font-semibold text-xs select-text">
+           Life Insurance
+          </p>
+          <p class="text-[#4F7CFB] text-xs select-text">
+           It is a long established
+          </p>
+         </div>
+         <div class="hidden md:block">
+          <p class="font-semibold text-xs select-text">
+           Lorem Ipsum
+          </p>
+          <p class="text-[#4F7CFB] text-xs select-text">
+           Many publishing
+          </p>
+         </div>
+         <div class="hidden md:block">
+            <p class="font-semibold text-xs select-text">
+           Lorem Ipsum
+          </p>
+          <p class="text-[#4F7CFB] text-xs select-text">
+           Many publishing
+          </p>
+         </div>
+         <div class="hidden md:block">
+           <p class="font-semibold text-xs select-text">
+           Lorem Ipsum
+          </p>
+          <p class="text-[#4F7CFB] text-xs select-text">
+           Many publishing
+          </p>
+         </div>
+         <div>
+           <button
+            class="ml-auto text-blue-600 border border-blue-300 rounded-full px-4 py-1 text-xs hover:bg-blue-50 transition">
+            View Details
+          </button>
+         </div>
+        </div>
+       </div>
+<!-- Item 6 -->
+       <div class="bg-white rounded-2xl p-4 flex items-center gap-4 text-sm text-[#2E2E5C]">
+  <div class="flex items-center justify-center w-12 h-12 rounded-xl bg-pink-100 text-pink-600 flex-shrink-0">
+    <i class="fas fa-hand-holding-usd text-lg"></i>
+  </div>
+  <div class="flex-1 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2">
+    <div>
+      <p class="font-semibold text-xs sm:text-sm select-text">
+        Business loans
+      </p>
+      <p class="text-[#4F7CFB] text-xs sm:text-sm select-text">
+        It is a long established
+      </p>
+    </div>
+         <div class="hidden md:block">
+          <p class="font-semibold text-xs select-text">
+           Lorem Ipsum
+          </p>
+          <p class="text-[#4F7CFB] text-xs select-text">
+           Many publishing
+          </p>
+         </div>
+         <div class="hidden md:block">
+            <p class="font-semibold text-xs select-text">
+           Lorem Ipsum
+          </p>
+          <p class="text-[#4F7CFB] text-xs select-text">
+           Many publishing
+          </p>
+         </div>
+         <div class="hidden md:block">
+           <p class="font-semibold text-xs select-text">
+           Lorem Ipsum
+          </p>
+          <p class="text-[#4F7CFB] text-xs select-text">
+           Many publishing
+          </p>
+         </div>
+         <div >
+           <button
+            class="ml-auto text-blue-600 border border-blue-300 rounded-full px-4 py-1 text-xs hover:bg-blue-50 transition">
+            View Details
+          </button>
+         </div>
+        </div>
+       </div>
+       </div>
+      </ul>
+
+    </section>
+  </main>
+ </div>
+</body>
+</html>

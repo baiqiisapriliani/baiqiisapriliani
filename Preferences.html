@@ -1,0 +1,108 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   BankDash Credit Cards
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+   <script src="js/loadPartials.js"></script>
+     <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-KIT.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-[#F4F7FF] text-[#2E2E5C] min-h-screen flex">
+  <!-- Sidebar and Header wrapper -->
+    <div id="sidebar-container"></div>
+   <main class="flex-1 flex flex-col overflow-hidden">
+     <div id="header-container"></div>
+  
+   <!-- Main content -->
+   <main class="flex-1 flex flex-col overflow-hidden">
+    <!-- Header -->
+  
+    <!-- Content -->
+   <section class="flex-1 p-8">
+    <div class="bg-white rounded-2xl p-8 max-w-6xl mx-auto shadow-sm" style="background-color:#F9FAFC">
+     <!-- Tabs -->
+     <nav class="flex gap-10 border-b border-[#E5E7EB] mb-8">
+      <button class="text-[#6B7280] text-sm " onclick="window.location.href='settings.html'">
+       Edit Profile
+      </button>
+    <button aria-current="page" class="text-[#0B22E6] font-semibold border-b-2 border-[#0B22E6] pb-1 text-sm " onclick="window.location.href='Preferences.html'">
+        Preferences
+        </button>
+      <button class="text-[#6B7280] text-sm " onclick="window.location.href='security.html'">
+       Security
+      </button>
+     </nav>
+    <form class="space-y-6 max-w-4xl">
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div>
+       <label class="block text-xs font-semibold text-[#2B3674] mb-1 select-none" for="currency">
+        Currency
+       </label>
+       <input class="w-full rounded-lg border border-[#E6E9F0] bg-[#F9FBFF] px-4 py-3 text-[#9CA3AF] text-sm outline-none focus:ring-2 focus:ring-[#1A3BFF]" id="currency" type="text" value="USD"/>
+      </div>
+      <div>
+       <label class="block text-xs font-semibold text-[#2B3674] mb-1 select-none" for="timezone">
+        Time Zone
+       </label>
+       <input class="w-full rounded-lg border border-[#E6E9F0] bg-[#F9FBFF] px-4 py-3 text-[#9CA3AF] text-sm outline-none focus:ring-2 focus:ring-[#1A3BFF]" id="timezone" type="text" value="(GMT-12:00) International Date Line West"/>
+      </div>
+     </div>
+     <fieldset>
+      <legend class="text-sm font-semibold text-[#2B3674] mb-4 select-none">
+       Notification
+      </legend>
+      <div class="flex items-center space-x-4 mb-4">
+       <label class="relative inline-flex items-center cursor-pointer" for="notif1">
+        <input checked="" class="sr-only peer" id="notif1" type="checkbox"/>
+        <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:bg-[#5ACFCF] peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all relative">
+        </div>
+       </label>
+       <span class="text-sm select-none">
+        I send or receive digita currency
+       </span>
+      </div>
+      <div class="flex items-center space-x-4 mb-4">
+       <label class="relative inline-flex items-center cursor-pointer" for="notif2">
+        <input class="sr-only peer" id="notif2" type="checkbox"/>
+        <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:bg-[#5ACFCF] peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all relative">
+        </div>
+       </label>
+       <span class="text-sm select-none">
+        I receive merchant order
+       </span>
+      </div>
+      <div class="flex items-center space-x-4">
+       <label class="relative inline-flex items-center cursor-pointer" for="notif3">
+        <input checked="" class="sr-only peer" id="notif3" type="checkbox"/>
+        <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:bg-[#5ACFCF] peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all relative">
+        </div>
+       </label>
+       <span class="text-sm select-none">
+        There are recommendation for my account
+       </span>
+      </div>
+     </fieldset>
+   <div class="col-span-full flex justify-center md:justify-end mt-4">
+  <button type="submit"
+    class="bg-[#0B22E6] text-white rounded-xl px-8 py-3 text-sm font-normal w-full md:w-auto">
+    Save
+  </button>
+</div>
+    </form>
+   </section>
+   </main>
+  </div>
+ </body>
+ 
+</html>

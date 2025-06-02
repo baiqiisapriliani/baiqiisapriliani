@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>BankDash Credit Cards</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- FontAwesome -->
+   <script src="js/loadPartials.js"></script>
+  <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-KIT.js" crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-[#F4F7FF] text-[#2E2E5C] min-h-screen flex">
+  <!-- Sidebar -->
+  <div id="sidebar-container"></div>
+
+  <!-- Main Content -->
+  <main class="flex-1 flex flex-col overflow-auto">
+    <!-- Header -->
+    <div id="header-container"></div>
+
+    <!-- Content Section -->
+    <section class="flex-1 p-8">
+      <div class="bg-white rounded-2xl p-8 max-w-6xl mx-auto shadow-sm" style="background-color:#F9FAFC">
+        
+        <!-- Tabs -->
+        <nav class="flex gap-10 border-b border-[#E5E7EB] mb-8">
+          <button aria-current="page" class="text-[#0B22E6] font-semibold border-b-2 border-[#0B22E6] pb-1 text-sm" onclick="window.location.href='#'">
+            Edit Profile
+          </button>
+          <button class="text-[#6B7280] text-sm" onclick="window.location.href='Preferences.html'">
+            Preferences
+          </button>
+          <button class="text-[#6B7280] text-sm" onclick="window.location.href='security.html'">
+            Security
+          </button>
+        </nav>
+
+        <!-- Form Section -->
+        <form class="grid grid-cols-1 md:grid-cols-[auto_1fr] gap-x-8 gap-y-6 items-start">
+          
+          <!-- Profile Picture -->
+          <div class="relative w-32 h-32 mx-auto md:mx-0">
+            <img alt="Profile" class="w-32 h-32 rounded-full object-cover"
+              src="img/foto1.jpg" />
+            <button type="button" aria-label="Edit profile picture"
+              class="absolute bottom-0 right-0 bg-[#0B22E6] w-8 h-8 rounded-full flex items-center justify-center text-white border-2 border-white">
+              <i class="fas fa-pen text-xs"></i>
+            </button>
+          </div>
+
+          <!-- Input Fields -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4 w-full">
+            <!-- Your Name -->
+            <div>
+              <label class="block text-xs text-[#111827] mb-1" for="yourName">Your Name</label>
+              <input id="yourName" type="text" value="Charlene Reed"
+                class="w-full rounded-lg border border-[#E5E7EB] px-4 py-2 text-sm text-[#6B7280] placeholder-[#9CA3AF] focus:outline-none focus:ring-1 focus:ring-[#0B22E6]" />
+            </div>
+
+            <!-- User Name -->
+            <div>
+              <label class="block text-xs text-[#111827] mb-1" for="userName">User Name</label>
+              <input id="userName" type="text" value="Charlene Reed"
+                class="w-full rounded-lg border border-[#E5E7EB] px-4 py-2 text-sm text-[#6B7280] placeholder-[#9CA3AF] focus:outline-none focus:ring-1 focus:ring-[#0B22E6]" />
+            </div>
+
+            <!-- Email -->
+            <div>
+              <label class="block text-xs text-[#111827] mb-1" for="email">Email</label>
+              <input id="email" type="email" value="charlenereed@gmail.com"
+                class="w-full rounded-lg border border-[#E5E7EB] px-4 py-2 text-sm text-[#6B7280] placeholder-[#9CA3AF] focus:outline-none focus:ring-1 focus:ring-[#0B22E6]" />
+            </div>
+
+            <!-- Password -->
+            <div>
+              <label class="block text-xs text-[#111827] mb-1" for="password">Password</label>
+              <input id="password" type="password" value="*********"
+                class="w-full rounded-lg border border-[#E5E7EB] px-4 py-2 text-sm text-[#6B7280] placeholder-[#9CA3AF] focus:outline-none focus:ring-1 focus:ring-[#0B22E6]" />
+            </div>
+
+            <!-- Date of Birth -->
+            <div>
+              <label class="block text-xs text-[#111827] mb-1" for="dob">Date of Birth</label>
+              <select id="dob"
+                class="w-full rounded-lg border border-[#E5E7EB] px-4 py-2 text-sm text-[#6B7280] focus:outline-none focus:ring-1 focus:ring-[#0B22E6]">
+                <option>25 January 1990</option>
+              </select>
+            </div>
+
+            <!-- Present Address -->
+            <div>
+              <label class="block text-xs text-[#111827] mb-1" for="presentAddress">Present Address</label>
+              <input id="presentAddress" type="text" value="San Jose, California, USA"
+                class="w-full rounded-lg border border-[#E5E7EB] px-4 py-2 text-sm text-[#6B7280] focus:outline-none focus:ring-1 focus:ring-[#0B22E6]" />
+            </div>
+
+            <!-- Permanent Address -->
+            <div>
+              <label class="block text-xs text-[#111827] mb-1" for="permanentAddress">Permanent Address</label>
+              <input id="permanentAddress" type="text" value="San Jose, California, USA"
+                class="w-full rounded-lg border border-[#E5E7EB] px-4 py-2 text-sm text-[#6B7280] focus:outline-none focus:ring-1 focus:ring-[#0B22E6]" />
+            </div>
+
+            <!-- City -->
+            <div>
+              <label class="block text-xs text-[#111827] mb-1" for="city">City</label>
+              <input id="city" type="text" value="San Jose"
+                class="w-full rounded-lg border border-[#E5E7EB] px-4 py-2 text-sm text-[#6B7280] focus:outline-none focus:ring-1 focus:ring-[#0B22E6]" />
+            </div>
+
+            <!-- Postal Code -->
+            <div>
+              <label class="block text-xs text-[#111827] mb-1" for="postalCode">Postal Code</label>
+              <input id="postalCode" type="text" value="45962"
+                class="w-full rounded-lg border border-[#E5E7EB] px-4 py-2 text-sm text-[#6B7280] focus:outline-none focus:ring-1 focus:ring-[#0B22E6]" />
+            </div>
+
+            <!-- Country -->
+            <div>
+              <label class="block text-xs text-[#111827] mb-1" for="country">Country</label>
+              <input id="country" type="text" value="USA"
+                class="w-full rounded-lg border border-[#E5E7EB] px-4 py-2 text-sm text-[#6B7280] focus:outline-none focus:ring-1 focus:ring-[#0B22E6]" />
+            </div>
+          </div>
+
+          <!-- Save Button -->
+        <div class="col-span-full flex justify-center md:justify-end mt-4">
+  <button type="submit"
+    class="bg-[#0B22E6] text-white rounded-xl px-8 py-3 text-sm font-normal w-full md:w-auto">
+    Save
+  </button>
+</div>
+
+
+        </form>
+
+      </div>
+    </section>
+  </main>
+</body>
+</html>

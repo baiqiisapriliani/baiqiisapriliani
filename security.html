@@ -1,0 +1,90 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   BankDash Credit Cards
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+   <script src="js/loadPartials.js"></script>
+     <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-KIT.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-[#F4F7FF] text-[#2E2E5C] min-h-screen flex">
+  <!-- Sidebar and Header wrapper -->
+    <div id="sidebar-container"></div>
+   <main class="flex-1 flex flex-col overflow-hidden">
+     <div id="header-container"></div>
+  
+   <!-- Main content -->
+   <main class="flex-1 flex flex-col overflow-hidden">
+    <!-- Header -->
+  
+    <!-- Content -->
+   <section class="flex-1 p-8">
+    <div class="bg-white rounded-2xl p-8 max-w-6xl mx-auto shadow-sm" style="background-color:#F9FAFC">
+     <!-- Tabs -->
+     <nav class="flex gap-10 border-b border-[#E5E7EB] mb-8">
+      <button class="text-[#6B7280] text-sm " onclick="window.location.href='settings.html'">
+       Edit Profile
+      </button>
+    <button class="text-[#6B7280] text-sm " onclick="window.location.href='Preferences.html'">
+        Preferences
+        </button>
+      <button aria-current="page" class="text-[#0B22E6] font-semibold border-b-2 border-[#0B22E6] pb-1 text-sm " onclick="window.location.href='security.html'">
+       Security
+      </button>
+     </nav>
+    <form class="space-y-6 max-w-3xl">
+     <div>
+      <p class="font-semibold text-[#2e3561] mb-2 select-text">
+       Two-factor Authentication
+      </p>
+      <label class="inline-flex items-center cursor-pointer select-none" for="notif1">
+  <div class="relative" style="width: 44px; height: 24px">
+    <input checked="" class="sr-only peer" id="notif1" type="checkbox"/>
+    <div class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:bg-[#5ACFCF] peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all relative"></div>
+  </div>
+  <span class="ml-3 text-sm text-[#2e3561] font-normal">
+    Enable or disable two factor authentication
+  </span>
+</label>
+     </div>
+     <div>
+      <p class="font-semibold text-[#2e3561] mb-1 select-text">
+       Change Password
+      </p>
+      <label class="block mb-1 text-sm text-[#2e3561] font-normal select-text" for="currentPassword">
+       Current Password
+      </label>
+      <input class="w-full rounded-lg border border-[#e6e9f0] bg-white px-4 py-3 text-[#5f7ea7] text-sm font-normal placeholder-[#5f7ea7] cursor-default" id="currentPassword"  type="password" value="*********"/>
+     </div>
+     <div>
+      <label class="block mb-1 text-sm text-[#2e3561] font-normal select-text" for="newPassword">
+       New Password
+      </label>
+      <input class="w-full rounded-lg border border-[#e6e9f0] bg-white px-4 py-3 text-[#5f7ea7] text-sm font-normal placeholder-[#5f7ea7] cursor-default" id="newPassword"  type="password" value="*********"/>
+     </div>
+    <div class="col-span-full flex justify-center md:justify-end mt-4">
+  <button type="submit"
+    class="bg-[#0B22E6] text-white rounded-xl px-8 py-3 text-sm font-normal w-full md:w-auto">
+    Save
+  </button>
+</div>
+
+     </div>
+    </form>
+   </section>
+   </main>
+  </div>
+ </body>
+ 
+</html>
